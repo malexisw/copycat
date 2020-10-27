@@ -1,0 +1,61 @@
+.foot{
+    width: 100%;
+
+    background: #000;
+    text-align: center;
+
+    .title{
+        color: #67c1f5;
+        font-size: 24px;
+
+        padding-top: 30px;
+    }
+    
+    .signIn{
+        margin-top: 30px;
+
+        color: #8f98a0;
+        font-size: 15px;
+    }
+
+    .btn{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        cursor: pointer;
+
+        margin-top: 25px;
+        border-radius: 3px;
+
+        color: #d2e885;
+        width: fit-content;
+        padding: 0 15px;
+
+        font-size: 15px;
+        line-height: 30px;
+
+        background: linear-gradient(to bottom, #799905 5%, #536904 95%);
+    }
+
+    .btn:hover{
+        color: #fff;
+        background: #799905;
+    }
+
+    .signUp{
+        color: #8f98a0;
+        font-size: 15px;
+        margin-top: 30px;
+        padding-bottom: 20px;
+
+        span{
+            cursor: pointer;
+            color: #fff;
+        }
+
+        span:hover{
+            color: #67c1f5;
+        }
+    }
+}

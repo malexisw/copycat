@@ -1,0 +1,172 @@
+.top{
+    position: relative;
+    top: 30px;
+
+    min-width: 940px;
+    width: 940px;
+    margin: auto;
+
+    color: #c6d4df;
+    font-size: 13px;
+
+    background: rgba( 62, 126, 167, 0.8);
+
+    opacity: 0.9;
+
+    .btn-box{
+        display: flex;
+        position: relative;
+
+        .btn{
+            padding: 5px 10px;
+            width: fit-content;
+            height: 100%;
+            text-align: center;
+
+            border-right: solid 1px #000000;
+
+            display: flex;
+
+            cursor: pointer;
+
+            .icon{
+                transform: translateY(-15%);
+            }
+        }
+
+        .btn:hover{
+            color: #000000;
+            background: linear-gradient( to bottom, #e3eaef 5%, #c7d5e0 95%);
+        }
+
+        .search-bar{
+            display: flex;
+
+            position: absolute;
+            right: 2.5px;
+            top: 2.5px;
+
+            width: 230px;
+            height: 29px;
+
+            input{
+                width: 90%;
+                height: 100%;
+
+                background: #316282;
+
+                color: #fff;
+                font-style: italic;
+
+                border: solid 1px #000000;
+                border-radius: 2.5px;
+
+                padding: 0px 10px;
+            }
+
+            input::placeholder{
+                color: #0e1c25;
+                font-size: 1.1em;
+            }
+
+            input:hover {
+                border-color: rgba(70, 147, 196, 0.8);
+                outline: hidden;
+            }
+
+            .btn-search{
+                position: absolute;
+                right: 1.5px;
+                top: 1px;
+
+                height: 100%;
+                width: 27px;
+
+                border-radius: 2.5px;
+
+                color: #245575;
+                background: rgba(70, 147, 196, 0.8);
+                text-align: center;
+                cursor: pointer;
+
+                .icon-btn{
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: fit-content;
+                    width: fit-content;
+                    margin: auto;
+
+                    font-size: 1.1em;
+                }
+            }
+
+            .btn-search:hover{
+                background: rgba(78, 166, 221, 0.8);
+            }
+        }
+
+        .store-hidden,.browse-hidden{
+            visibility: hidden;
+            color: #000000;
+            background: linear-gradient( to bottom, #e3eaef 5%, #c7d5e0 95%);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            padding: 8px 5px 8px 5px;
+            height: fit-content;
+            width: fit-content;
+            z-index: 10;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .store-hidden{
+            position: absolute;
+            top: 29px;
+        }
+
+        .browse-hidden{
+            display: flex;
+
+            position: absolute;
+            top: 29px;
+            left: 98px;
+        }
+
+        .line{
+            height: 1px;
+            margin: 5px 10px 5px 10px;
+            background-color: #fff;
+        }
+
+        .store:hover ~ .store-hidden, .store-hidden:hover, .browse:hover ~ .browse-hidden, .browse-hidden:hover{
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .title-hidden{
+            color: #4f94bc;
+            font-size: 11px;
+        }
+
+        .txt-hidden{
+            cursor: pointer;
+            padding: 0 12.5px;
+        }
+
+        .txt-hidden:hover{
+            color: #fff;
+            background: #000;
+        }
+
+        .column-hidden{
+            padding: 0 2.5px;
+            border-right: solid 1px #fff;
+        }
+
+        .bless{
+            border: none;
+        }
+
+        
+    }
+}

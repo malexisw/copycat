@@ -1,0 +1,40 @@
+.home{
+    width: 100%;
+    height: 100%;
+
+    background: url(../../../../assets/steam/bg-steam.png) center top no-repeat #1b2838;
+
+    .banner{
+        width: 100%;
+        height: 450px;
+
+        background: url(../../../../assets/steam/banniere.jpg) no-repeat;
+        background-size: 100%;
+        position: relative;
+    }
+
+    .container{
+        display: flex;
+
+        width: 75%;
+        margin: auto;
+
+        .content{
+            margin: 20px 10px;
+        }
+    }
+
+    .onglet{
+        display: flex;
+    }
+
+    .bottom-content{
+        width: 100%;
+
+        background: linear-gradient( to bottom, rgba(42,71,94,1.0) 5%, rgba(42,71,94,0.0) 70%);
+    }
+
+    .temp{
+        margin-top: 50px;
+    }
+}

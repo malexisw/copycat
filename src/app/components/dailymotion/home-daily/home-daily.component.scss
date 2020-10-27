@@ -1,0 +1,180 @@
+.container{
+    width: 100%;
+
+    scroll-behavior: smooth;
+
+    a{
+        text-decoration: none;
+        color: #9d9d9d;
+    }
+}
+
+.head{
+    position: sticky;
+    top: 0;
+
+    width: calc(100% - 300px);
+    height: 4vh;
+
+    background: #232323;
+    
+    padding: 0 150px;
+
+    color: #9d9d9d;
+
+    font-weight: 600;
+
+    .wH{
+        height: 100%;
+        max-width: 860px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.blockH{
+    width: fit-content;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.txt{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .9em;
+}
+
+.center{
+    display: flex;
+    width: 100%;
+}
+
+.content{
+    display: flex;
+
+    width: 60%;
+    height: 100%;
+
+    padding-left: 150px;
+}
+
+.right{
+    width: 40%;
+}
+
+.left{
+    width: 100%;
+    background: #fff;
+    color: #000;
+
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section.b::before{
+        content: '';
+        width: 40px;
+        border-bottom: solid 8px #000;
+    }
+    
+
+    h1{
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+    h2{
+        font-size: 1.6em;
+        margin-bottom: 25px;
+    }
+
+    h1,h2{
+        font-weight: 900;
+        padding-top: 15px;
+    }
+}
+
+.block-video{
+    display: flex;
+    margin-bottom: 50px;
+
+    width: 90%;
+    height: 80%;
+    
+
+    .video{
+        width: 589.141px;
+        height: 331px;
+        background: #9d9d9d;
+
+        .img-video{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .txt-video{
+        height: fit-content;
+        margin-left: 10px;
+
+        .recent{
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: .7em;
+            color: #9d9d9d;
+        }
+
+        .title-video{
+            font-weight: 900;
+            font-size: 1.4em;
+            color: #000;
+        }
+
+        .channel{
+            display: flex;
+            height: 25px;
+        }
+
+        .logo,.name,.time{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .logo{
+            background: #9d9d9d;
+            width: 15px;
+            height: 15px;
+        }
+
+        .name{
+            margin-left: 3px;
+            font-size: .7em;
+            color: #7e7e7e;
+        }
+
+        .time{
+            font-size: .65em;
+            color: #9d9d9d;
+            margin-left: 15px;
+        }
+    }
+
+    .video,.txt-video{
+        cursor: pointer;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    height: fit-content;
+}
+
+.highlight{
+    color: #fff;
+    border-bottom: solid 4px #fff;
+}

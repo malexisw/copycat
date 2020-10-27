@@ -1,0 +1,61 @@
+.browse{
+    width: 940px;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+    .title{
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+}
+
+.content{
+    margin-top: 20px;
+
+    display: flex;
+
+    .btn{
+        background: url(../../../../assets/steam/bg-special.jpg);
+        background-position-y: -105px;
+
+        border-radius: 3px;
+
+        margin-right: 10px;
+        width: 226px;
+        height: 58px;
+        text-align: center;
+        cursor: pointer;
+
+        a{
+            text-decoration: none;
+        }
+
+        .text{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            color: #66c0f4;
+            line-height: 56px;
+            font-size: 18px;
+
+            font-weight: 300;
+        }
+    }
+
+    .btn:hover{
+        background-position-x: -200px;
+
+        .text{
+            color: #fff;
+        }
+    }
+}

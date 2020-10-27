@@ -1,0 +1,645 @@
+<app-header-daily></app-header-daily>
+<div class="container" (scroll)="setH()">
+    <div class="head">
+        <div class="wH">
+            <div [class]="headNews" >
+                <div class="txt" (click)="scrollTo('#OnNews')">
+                    In the news
+                </div>
+            </div>
+            <div [class]="headActu" >
+                <div class="txt" (click)="scrollTo('#Actu')">
+                    News
+                </div>
+            </div>
+            <div [class]="headSport" >
+                <div class="txt" (click)="scrollTo('#Sport')">
+                    Sport
+                </div>
+            </div>
+            <div [class]="headEnter" >
+                <div class="txt" (click)="scrollTo('#Entertainment')">
+                    Entertainment
+                </div>
+            </div>
+            <div [class]="headMusic">
+                <div class="txt" (click)="scrollTo('#Music')">
+                    Music
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="content">
+            <div class="left">
+                <div class="section">
+                    <h1 class="title" id="OnNews">On the news</h1>
+                    <h2>Videos not to be missed</h2>
+    
+                    <div class="block-video">
+                        <div class="video" (click)="onYoutube()">
+                            <img class="img-video" src="../../../../assets/youtube-fond.jpg">
+                        </div>
+                        <div class="txt-video" (click)="onYoutube()">
+                            <div class="recent">
+                                Recent
+                            </div>
+                            <div class="title-video">
+                                YouTube
+                            </div>
+                            <div class="channel">
+                                <div class="logo">
+    
+                                </div>
+                                <div class="name">
+                                    YouTube
+                                </div>
+                                <div class="time">
+                                    Add 2 years ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-video">
+                        <div class="video" (click)="onSteam()">
+                            <img class="img-video" src="../../../../assets/steam-fond.jpg">
+                        </div>
+                        <div class="txt-video" (click)="onSteam()">
+                            <div class="recent">
+                                Recent
+                            </div>
+                            <div class="title-video">
+                                Steam
+                            </div>
+                            <div class="channel">
+                                <div class="logo">
+    
+                                </div>
+                                <div class="name">
+                                    Steam
+                                </div>
+                                <div class="time">
+                                    2 years ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x7x2n2c?playlist=x5nmbq" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/om.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x7x2n2c?playlist=x5nmbq" target="_blank">
+                            <div class="txt-video" (click)="onNetflix()">
+                                <div class="recent">
+                                    Recent
+                                </div>
+                                <div class="title-video">
+                                    L'OM au complet pour tenter l'exploit
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        CANAL+Sport
+                                    </div>
+                                    <div class="time">
+                                        Add 13 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x7x2l71?playlist=x5nmbq" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/boycott.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x7x2l71?playlist=x5nmbq" target="_blank">
+                            <div class="txt-video" (click)="onTwitch()">
+                                <div class="recent">
+                                    Recent
+                                </div>
+                                <div class="title-video">
+                                    "Ne les achetez pas": le président turc Recep Tayyip Erdogan appelle au boycott des produits français
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        BFMTV
+                                    </div>
+                                    <div class="time">
+                                        Add 1 hour ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+    
+                <div class="section b">
+                    <h1 class="title" id="Actu">Actuality</h1>
+                    <h2>Zoom on</h2>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x2nt22q" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/firstVideo.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x2nt22q" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    me at the zoo
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                       jawed
+                                    </div>
+                                    <div class="time">
+                                        Add 15 years ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x7wwwyx" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/Zevent.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x7wwwyx" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Jeux vidéo :"Z Event" récolte 5,7 millions d'euros pour Amnesty International
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        Le parisien
+                                    </div>
+                                    <div class="time">
+                                        Add 1 day ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x7wjsea" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/trump.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x7wjsea" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    #NEWS | Trumps-Biden presidential debate moderated by CHris Wallace - 01
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        MinhARC
+                                    </div>
+                                    <div class="time">
+                                        Add 19 days ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x7tj3h3" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/corona.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x7tj3h3" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Friday's coronavirus news_New York's antibody tests, Georgia's partiall reopening
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        Breaking Hot News
+                                    </div>
+                                    <div class="time">
+                                        Add 6 month ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="section b">
+                    <h1 class="title" id="Sport">Sport</h1>
+                    <h2>Highlights</h2>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x7os54m" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/sportnews.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x7os54m" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Sport News 3-12-2019
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        Action24 tv
+                                    </div>
+                                    <div class="time">
+                                        Add 11 months ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x7w0hve" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/foot.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x7w0hve" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Football: Les joueuse de l'équipe du Brésil toucheront désormais les mêmes salaires que les hommes, un des premiers cas d'égalité salariale dans le football mondial.
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        Influence News (Français)
+                                    </div>
+                                    <div class="time">
+                                        Add last month
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x7ws4ks" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/lackers.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x7ws4ks" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Lakers crush Heat to capture 17th NBA championship
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        rapplerdotcom
+                                    </div>
+                                    <div class="time">
+                                        Add 7 days ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x7wvzno" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/handball.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x7wvzno" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Recent
+                                </div>
+                                <div class="title-video">
+                                    Ivry - PSG Handball:les réactions
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        PSG
+                                    </div>
+                                    <div class="time">
+                                        Add yesterday
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="section b">
+                    <h1 class="title" id="Entertainment">Entertainment</h1>
+                    <h2>The daily debrief</h2>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x7wuwx4" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/cnn.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x7wuwx4" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Trump again refuses to denounce QAnon
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        yvillage
+                                    </div>
+                                    <div class="time">
+                                        Add 3 days ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x6abgkq" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/soda.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x6abgkq" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Streamer Sodapoppin rage when he fall
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        Tuxboard
+                                    </div>
+                                    <div class="time">
+                                        Add 3 years ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x6hmnot" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/got.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x6hmnot" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Game Of Thrones Season 8 Teaser
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        Le Grand Zap!
+                                    </div>
+                                    <div class="time">
+                                        Add 3 years ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/xjbzpj" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/wow.jpg">
+                            </div>
+                        </a>
+
+                        <a href="https://www.dailymotion.com/video/xjbzpj" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Recent
+                                </div>
+                                <div class="title-video">
+                                    WoW - Trailer 4.2 - "Rage of the Firelands"
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        Millenium TV
+                                    </div>
+                                    <div class="time">
+                                        Add 9 years ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+    
+                <div class="section b">
+                    <h1 class="title" id="Music">Music</h1>
+                    <h2>That makes noise</h2>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x6vklvv" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/pewd.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x6vklvv" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    bitch lasagna
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        PewDiePie
+                                    </div>
+                                    <div class="time">
+                                        2 years ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x5mmhhf" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/bieber.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x5mmhhf" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Justin Bieber - Baby
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        Justin Bieber
+                                    </div>
+                                    <div class="time">
+                                        Add 3 years ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x2898u" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/dk.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x2898u" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Donkey Kong Dances to DK Rap (Coconut Gun Rap)
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        mariomoney1001
+                                    </div>
+                                    <div class="time">
+                                        Add 10 months ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="block-video">
+                        <a href="https://www.dailymotion.com/video/x5ik4n9" target="_blank">
+                            <div class="video">
+                                <img class="img-video" src="../../../../assets/Daily/despacito.jpg">
+                            </div>
+                        </a>
+                        <a href="https://www.dailymotion.com/video/x5ik4n9" target="_blank">
+                            <div class="txt-video">
+                                <div class="recent">
+                                    Tendance
+                                </div>
+                                <div class="title-video">
+                                    Luis Fonsi - Despacito
+                                </div>
+                                <div class="channel">
+                                    <div class="logo">
+        
+                                    </div>
+                                    <div class="name">
+                                        Luis Fonsi
+                                    </div>
+                                    <div class="time">
+                                        Add 4 years ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="right">
+            <app-side-content></app-side-content>
+        </div>
+    </div>
+    <app-footer-daily></app-footer-daily>
+</div>

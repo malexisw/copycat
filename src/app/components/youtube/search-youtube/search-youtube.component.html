@@ -1,0 +1,51 @@
+<div class="search">
+    <div class="start">
+        <div class="menu pc" (click)="onMenu()">
+            <div class="vertB">
+                <fa-icon [icon]="faBars"></fa-icon>
+            </div>
+            <div class="circle"></div>
+        </div>
+        
+        <div class="logo" (click)="redirectHome()">
+            <img src="../../../../assets/youtube-search.png">
+            <span class="tooltipYT">Home</span>
+        </div>
+    </div>
+    
+
+    <div class="search-bar pc">
+        <div class="bars">
+            <input class="txt" type="text" placeholder="Search">
+        </div>
+        <div class="btn-search">
+            <div class="search-logo">
+                <fa-icon [icon]="faSearch"></fa-icon>
+            </div>
+            <span class="tooltipGrey">Search</span>
+        </div>
+    </div>
+
+    <div class="end">
+        <div class="mr50 create">
+            <fa-icon [icon]="faVideo"></fa-icon>
+            <span class="tooltipGrey">Create</span>
+        </div>
+        <div class="mr50 loop phone">
+            <fa-icon [icon]="faSearch"></fa-icon>
+        </div>
+        <div class="mr50 app pc">
+            <fa-icon [icon]="faTh"></fa-icon>
+            <span class="tooltipGrey pc">Youtube Apps</span>
+        </div>
+        <div class="mr50 bell pc">
+            <fa-icon [icon]="faBell"></fa-icon>
+            <span class="tooltipGrey">Notifications</span>
+        </div>
+        <div class="userPP">
+            <div class="icon">
+                <fa-icon [icon]="faUser"></fa-icon>
+            </div>
+        </div>
+    </div>
+</div>

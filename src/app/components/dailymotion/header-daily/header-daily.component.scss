@@ -1,0 +1,70 @@
+.header{
+    width: 100%;
+    height: 5vh;
+    background: #0d0d0d;
+}
+
+.intern{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.logo-img{
+    width: 114px;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.interraction{
+    display: flex;
+    color: #dadada;
+    height: fit-content;
+    width: 30%;
+    justify-content: space-between;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 15px;
+
+    .ml50{
+        margin-left: 40px;
+    }
+
+    .btnH{
+        cursor: pointer;
+        width: fit-content;
+
+        display: flex;
+    }
+
+    .icon{
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+
+    .hw:hover{
+        color: #fff;
+    }
+
+    .register{
+        padding: 8px 12px;
+        background: #fff;
+        color: #000;
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 1;
+    }
+}

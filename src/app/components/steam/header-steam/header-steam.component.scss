@@ -1,0 +1,123 @@
+.header{
+    background: #171a21;
+
+    .content{
+        width: 940px;
+        margin: auto;
+
+        display: flex;
+    }
+
+    .logo{
+        width: 176px;
+        height: 44px;
+
+        padding: 25px 25px 25px 0px;
+
+        .img-logo{
+            width: 100%;
+
+            cursor: pointer;
+        }
+    }
+
+    .nav{
+        position: relative;
+        display: flex;
+
+        color: #b8b6b4;
+
+        margin: 35px 7px 7px 7px;
+        
+        .txt{
+            text-transform: uppercase;
+            font-size: 14px;
+
+            margin-right: 15px;
+            cursor: pointer;
+
+            height: fit-content;
+        }
+
+        .txt:hover{
+            color: #fff;
+        }
+
+        .store-hidden,.comm-hidden{
+            visibility: hidden;
+            background: #171a21;
+            color: #b8b6b4;
+            padding: 5px 15px 10px 15px;
+            height: fit-content;
+            width: fit-content;
+            z-index: 10;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .store-hidden{
+            position: absolute;
+            top: 30px;  
+        }
+
+        .comm-hidden{
+            position: absolute;
+            top: 30px;
+            left: 50px;
+        }
+    
+        .store:hover ~ .store-hidden, .store-hidden:hover{
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .comm:hover ~ .comm-hidden, .comm-hidden:hover{
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .txt-hidden{
+            text-transform: uppercase;
+            font-size: 11px;
+            padding-right: 10px;
+        }
+    }
+
+    .account{
+        display: flex;
+        
+        position: relative;
+        left: 200px;
+
+        color: #b8b6b4;
+        font-size: 11px;
+        line-height: 24px;
+        letter-spacing: .5px;
+
+        margin-top: 6px;
+
+        .install,.login{
+            margin-right: 10px;
+        }
+
+        .lang{
+            margin-left: 10px;
+        }
+
+        .install{
+            padding: 0 5px;
+            background:#5c7e10;
+            height: fit-content;
+
+            color: #e5e4dc;
+        }
+
+        .h{
+            cursor: pointer;
+        }
+
+        .h:hover{
+            color: #fff;
+        }
+    }
+}

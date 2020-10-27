@@ -1,0 +1,270 @@
+<app-search-youtube (headOutput)="header = $event"></app-search-youtube>
+<app-header-youtube [header]="header"></app-header-youtube>
+<div [class]="classContainer()">
+    <div class="content">
+
+        <div class="block">
+            <div class="image">
+                <img class="vignette" src="../../../../assets/daily-fond.jpg" height="100%" (click)="onDaily()">
+            </div>
+            <div class="info">
+                <div class="pp">
+                    <div class="circle"></div>
+                </div>
+                <div class="text-info">
+                    <div class="title">
+                        Dailymotion
+                    </div>
+                    <div class="info-channel">
+                        <div class="name">
+                            Dailymotion
+                            <span class="tooltipGrey">Dailymotion</span>
+                        </div>
+                        <div class="gt">
+                            <div class="data">
+                                1,9 M views 
+                            </div>
+                            <div class="time">
+                                22 minutes ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="image">
+                <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" target="_blank">
+                    <img class="vignette" src="../../../../assets/firstVideo.jpg" height="100%" width="100%">
+                </a>
+            </div>
+            <div class="info">
+                <div class="pp">
+                    <div class="circle">
+                        <img src="../../../../assets/youtube/zoo.jpg">
+                    </div>
+                </div>
+                <div class="text-info">
+                    <div class="title">
+                        Me at the zoo
+                    </div>
+                    <div class="info-channel">
+                        <div class="name">
+                            jawed
+                            <span class="tooltipGrey">jawed</span>
+                        </div>
+                        <div class="gt">
+                            <div class="data">
+                                116 M views 
+                            </div>
+                            <div class="time">
+                                15 years ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="image">
+                <img class="vignette" src="../../../../assets/steam-fond.jpg" height="100%" (click)="onSteam()">
+            </div>
+            <div class="info">
+                <div class="pp">
+                    <div class="circle"></div>
+                </div>
+                <div class="text-info">
+                    <div class="title">
+                        Steam 
+                    </div>
+                    <div class="info-channel">
+                        <div class="name">
+                            Steam
+                            <span class="tooltipGrey">Steam</span>
+                        </div>
+                        <div class="gt">
+                            <div class="data">
+                                1,9 M views 
+                            </div>
+                            <div class="time">
+                                22 minutes ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="image">
+                <a href="https://www.youtube.com/watch?v=6Dh-RL__uN4" target="_blank">
+                    <img class="vignette" src="../../../../assets/pewd.jpg" height="100%" width="100%">
+                </a>
+            </div>
+            <div class="info">
+                <div class="pp">
+                    <div class="circle">
+                        <img src="../../../../assets/youtube/pewd.jpg">
+                    </div>
+                </div>
+                <div class="text-info">
+                    <div class="title">
+                        bitch lasagna
+                    </div>
+                    <div class="info-channel">
+                        <div class="name">
+                            PewDiePie
+                            <span class="tooltipGrey">PewDiePie</span>
+                        </div>
+                        <div class="gt">
+                            <div class="data">
+                                269 M views 
+                            </div>
+                            <div class="time">
+                                2 years ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="image">
+                <a href="https://www.youtube.com/watch?v=kfVsfOSbJY0" target="_blank">
+                    <img class="vignette" src="../../../../assets/friday.jpg" height="100%" width="100%">
+                </a>
+            </div>
+            <div class="info">
+                <div class="pp">
+                    <div class="circle">
+                        <img src="../../../../assets/youtube/rebecca.jpg">
+                    </div>
+                </div>
+                <div class="text-info">
+                    <div class="title">
+                        Rebecca Black - Friday
+                    </div>
+                    <div class="info-channel">
+                        <div class="name">
+                            rebecca
+                            <span class="tooltipGrey">rebecca</span>
+                        </div>
+                        <div class="gt">
+                            <div class="data">
+                                147 M views 
+                            </div>
+                            <div class="time">
+                                9 years ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="image">
+                <a href="https://www.youtube.com/watch?v=WZU2PDO33IU&list=PLGYTo9abuT5OMwu2ieb2-zJI8T3UmBiPc&index=10">
+                    <img class="vignette" src="../../../../assets/youtube/DK.webp" height="100%">
+                </a>
+            </div>
+            <div class="info">
+                <div class="pp">
+                    <div class="circle">
+                        <img src="../../../../assets/youtube/mike.jpg">
+                    </div>
+                </div>
+                <div class="text-info">
+                    <div class="title">
+                        Bring Donkey Kong To Life (Evanescence + DK Rap MASHUP)
+                    </div>
+                    <div class="info-channel">
+                        <div class="name">
+                            Magik Mike
+                            <span class="tooltipGrey">Magik Mike</span>
+                        </div>
+                        <div class="gt">
+                            <div class="data">
+                                913 914 views 
+                            </div>
+                            <div class="time">
+                                3 years ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="image">
+                <a href="https://www.youtube.com/watch?v=YbJOTdZBX1g" target="_blank">
+                    <img class="vignette" src="../../../../assets/rewind.jpg" height="100%" width="100%">
+                </a>
+            </div>
+            <div class="info">
+                <div class="pp">
+                    <div class="circle">
+                        <img src="../../../../assets/youtube/youtube.jpg">
+                    </div>
+                </div>
+                <div class="text-info">
+                    <div class="title">
+                        YouTube Rewind 2018: Everyone Controls Rewind | #YouTubeRewind
+                    </div>
+                    <div class="info-channel">
+                        <div class="name">
+                            YouTube
+                            <span class="tooltipGrey">YouTube</span>
+                        </div>
+                        <div class="gt">
+                            <div class="data">
+                                207 M views 
+                            </div>
+                            <div class="time">
+                                1 year ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="image">
+                <a href="https://www.youtube.com/watch?v=4DxL6IKmXx4">
+                    <img class="vignette" src="../../../../assets/youtube/lisa.webp" height="100%" >
+                </a>
+            </div>
+            <div class="info">
+                <div class="pp">
+                    <div class="circle">
+                        <img src="../../../../assets/youtube/lis.jpg">
+                    </div>
+                </div>
+                <div class="text-info">
+                    <div class="title">
+                        LiSA 『炎』 -MUSiC CLiP-
+                    </div>
+                    <div class="info-channel">
+                        <div class="name">
+                            LisA Official YouTube
+                            <span class="tooltipGrey">LisA Official YouTube</span>
+                        </div>
+                        <div class="gt">
+                            <div class="data">
+                                21 M views 
+                            </div>
+                            <div class="time">
+                                13 days ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
