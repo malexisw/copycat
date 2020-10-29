@@ -68,3 +68,19 @@
         line-height: 1;
     }
 }
+
+@media only screen and (max-width: 1000px){
+    
+    .intern{
+        width: 95%;
+    }
+    
+    .interraction{
+        width: auto;
+    }
+
+    .register,.text{
+        visibility: hidden;
+        position: absolute;
+    }
+}

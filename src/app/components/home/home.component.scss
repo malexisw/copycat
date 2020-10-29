@@ -4,9 +4,10 @@
 }
 
 .head{
-    position: absolute;
+    position: relative;
     top: 20%;
     left: 5%;
+    width: fit-content;
 }
 
 .subtitle{
@@ -30,17 +31,21 @@
 .content{
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    height: 300px;
+    max-width: 90%;
+    max-height: 300px;
+    height: auto;
+    width: auto;
 
-    position: absolute;
-    bottom: 20%;
+    position: relative;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
 
     .block{
-        height: 100%;
-        width: 30%;
+        max-height: 100%;
+        max-width: 30%;
+        height: auto;
+        width: auto;
         transition: .3s;
 
         cursor: pointer;

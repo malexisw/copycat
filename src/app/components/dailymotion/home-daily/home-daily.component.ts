@@ -42,36 +42,12 @@ export class HomeDailyComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
 
-  setH(){   
-    if(window.scrollY >= 0 && window.scrollY < 1600){
-      this.headNews = "blockH highlight";
-    } else {
-      this.headNews = "blockH";
-    }
-
-    if(window.scrollY >= 1600 && window.scrollY < 3200){
-      this.headActu = "blockH highlight";
-    } else {
-      this.headActu = "blockH";
-    }
-
-    if(window.scrollY >= 3200 && window.scrollY < 4800){
-      this.headSport = "blockH highlight";
-    } else {
-      this.headSport = "blockH";
-    }
-
-    if(window.scrollY >= 4800 && window.scrollY < 6400){
-      this.headEnter = "blockH highlight";
-    } else {
-      this.headEnter = "blockH";
-    }
-
-    if(window.scrollY >= 6400 && window.scrollY < 8200){
-      this.headMusic = "blockH highlight";
-    } else {
-      this.headMusic = "blockH";
-    }
+  setH(){  
+    this.headNews = window.scrollY >= 0 && window.scrollY < 1600 ? "blockH highlight" : "blockH";
+    this.headActu = window.scrollY >= 1600 && window.scrollY < 3200 ? "blockH highlight" : "blockH";
+    this.headSport = window.scrollY >= 3200 && window.scrollY < 4800 ? "blockH highlight" : "blockH";
+    this.headEnter = window.scrollY >= 4800 && window.scrollY < 6400 ? "blockH highlight" : "blockH";
+    this.headMusic = window.scrollY >= 6400 ? "blockH highlight" : "blockH";
   }
 
 
