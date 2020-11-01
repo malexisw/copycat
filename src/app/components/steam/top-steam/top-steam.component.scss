@@ -170,3 +170,10 @@
         
     }
 }
+
+@media only screen and (max-width: 800px){
+    .top{
+        max-width: 100%;
+        min-width: 50%;
+    }
+}

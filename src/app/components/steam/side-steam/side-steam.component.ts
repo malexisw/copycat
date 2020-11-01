@@ -11,5 +11,4 @@ export class SideSteamComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

@@ -3,81 +3,81 @@
         <div class="logo">
             <img src="../../../../assets/steam/steam-logo.png" class="img-logo" (click)="redirectHome()">
         </div>
-        <div class="nav">
-            <div class="txt store">
-                Store
-            </div>
-            <div class="txt comm">
-                Community
-            </div>
-            <div class="txt about">
-                About
-            </div>
-            <div class="txt support">
-                support
-            </div>
+        <div class="flex" (window:resize)="setNav($event)">
+            <div class="nav"  *ngIf="nav">
+                <div class="txt store">
+                    Store
+                </div>
+                <div class="txt comm">
+                    Community
+                </div>
+                <div class="txt about">
+                    About
+                </div>
+                <div class="txt support">
+                    support
+                </div>
 
-            <div class="comm-hidden">
-                <div class="box-hidden">
-                    <div class="txt-hidden">
-                        Home
+                <div class="comm-hidden">
+                    <div class="box-hidden">
+                        <div class="txt-hidden">
+                            Home
+                        </div>
+                        <div class="txt-hidden">
+                            Discussions
+                        </div>
+                        <div class="txt-hidden">
+                            Workshop
+                        </div>
+                        <div class="txt-hidden">
+                            Market
+                        </div>
+                        <div class="txt-hidden">
+                            Broadcasts
+                        </div>
                     </div>
-                    <div class="txt-hidden">
-                        Discussions
-                    </div>
-                    <div class="txt-hidden">
-                        Workshop
-                    </div>
-                    <div class="txt-hidden">
-                        Market
-                    </div>
-                    <div class="txt-hidden">
-                        Broadcasts
+                </div>
+
+                <div class="store-hidden">
+                    <div class="box-hidden">
+                        <div class="txt-hidden">
+                            Home
+                        </div>
+                        <div class="txt-hidden">
+                            Discovery Queue
+                        </div>
+                        <div class="txt-hidden">
+                            Wishlist
+                        </div>
+                        <div class="txt-hidden">
+                            Point shop
+                        </div>
+                        <div class="txt-hidden">
+                            News
+                        </div>
+                        <div class="txt-hidden">
+                            Stats
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="store-hidden">
-                <div class="box-hidden">
-                    <div class="txt-hidden">
-                        Home
-                    </div>
-                    <div class="txt-hidden">
-                        Discovery Queue
-                    </div>
-                    <div class="txt-hidden">
-                        Wishlist
-                    </div>
-                    <div class="txt-hidden">
-                        Point shop
-                    </div>
-                    <div class="txt-hidden">
-                        News
-                    </div>
-                    <div class="txt-hidden">
-                        Stats
-                    </div>
+            <div class="account" *ngIf="nav">
+                <div class="install h">
+                    <fa-icon [icon]="faDownload"></fa-icon>
+                    Install Steam
                 </div>
+                <div class="login h">
+                    login
+                </div>
+                <div class="pole">
+                    |
+                </div>
+                <div class="lang h">
+                    language
+                </div>
+                &nbsp; <fa-icon [icon]="faSortDown"></fa-icon>
             </div>
-            
-            
-            
-        </div>
-        <div class="account">
-            <div class="install h">
-                <fa-icon [icon]="faDownload"></fa-icon>
-                Install Steam
-            </div>
-            <div class="login h">
-                login
-            </div>
-            <div class="pole">
-                |
-            </div>
-            <div class="lang h">
-                language
-            </div>
-            &nbsp; <fa-icon [icon]="faSortDown"></fa-icon>
         </div>
     </div>
 </div>

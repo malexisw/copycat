@@ -637,8 +637,8 @@
                 
             </div>
         </div>
-        <div class="right">
-            <app-side-content></app-side-content>
+        <div class="right" (window:resize)="setRight($event)">
+            <app-side-content *ngIf="right"></app-side-content>
         </div>
     </div>
     <app-footer-daily></app-footer-daily>

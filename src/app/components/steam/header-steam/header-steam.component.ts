@@ -14,11 +14,18 @@ export class HeaderSteamComponent implements OnInit {
   faDownload = faDownload;
   faSortDown = faSortDown;
 
+  nav:boolean = true;
+
   ngOnInit(): void {
+    this.nav = window.innerWidth > 800 ? true : false;
   }
 
   redirectHome(){
     this.router.navigate(['/home']);
+  }
+
+  setNav(event){
+    this.nav = event.target.innerWidth > 800 ? true : false;
   }
 
 }

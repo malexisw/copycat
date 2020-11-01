@@ -16,7 +16,10 @@ export class HomeDailyComponent implements OnInit {
   headEnter:string = "blockH";
   headMusic:string = "blockH";
 
+  right:boolean = true;
+
   ngOnInit(): void {
+    this.right = window.innerWidth > 1000 ? true : false;
   }
 
   onYoutube(){
@@ -50,5 +53,7 @@ export class HomeDailyComponent implements OnInit {
     this.headMusic = window.scrollY >= 6400 ? "blockH highlight" : "blockH";
   }
 
-
+  setRight(event){
+    this.right = event.target.innerWidth < 1000 ? false : true;
+  }
 }

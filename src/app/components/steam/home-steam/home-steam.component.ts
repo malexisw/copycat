@@ -9,7 +9,13 @@ export class HomeSteamComponent implements OnInit {
 
   constructor() { }
 
+  side:boolean;
+
   ngOnInit(): void {
+    this.side = window.innerWidth > 800 ? true : false;
   }
 
+  setSide(event){
+    this.side = event.target.innerWidth > 800 ? true : false;
+  }
 }

@@ -1,11 +1,11 @@
 <div class="home">
     <app-header-steam></app-header-steam>
-    <div class="banner">
+    <div class="banner" >
         <app-top-steam></app-top-steam>
     </div>
     
-    <div class="container">
-        <app-side-steam></app-side-steam>
+    <div class="container" (window:resize)="setSide($event)">
+        <app-side-steam *ngIf="side"></app-side-steam>
 
         <div class="content">
             <app-special-steam></app-special-steam>

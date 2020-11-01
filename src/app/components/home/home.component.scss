@@ -7,13 +7,12 @@
     position: relative;
     top: 20%;
     left: 5%;
-    width: fit-content;
+    width: 60%;
 }
 
 .subtitle{
     font-weight: 300;
 
-    font-size: 3em;
     line-height: 1em;
 
     color: #aaa;
@@ -63,7 +62,7 @@
 }
 
 .bg{
-    background: #aaa;
+    background: rgb(211, 211, 211);
     height: 100%;
     width: 100%;
 
@@ -74,4 +73,16 @@
     clip-path: polygon(80% 38%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 35% 84%, 53% 71%, 65% 58%);
 
     z-index: -1;
+}
+
+@media only screen and (min-width: 800px){
+    .subtitle{
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .subtitle{
+        font-size: 2em;
+    }
 }

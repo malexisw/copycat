@@ -4,6 +4,7 @@
     border-top: solid 1px #d9d9d9;
 
     .content{
+        position: relative;
         height: 80%;
         width: 50%;
         margin: auto;
@@ -55,7 +56,6 @@
 
         .bottom .link-txt{
             color: grey;
-            font-size: 12px;
             text-align: center;
 
             width: 100px;
@@ -74,7 +74,34 @@
 
 }
 
+@media only screen and (min-width: 1000px){
+    .bottom .link-txt{
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width: 1000px){
+
+    .txt{
+        max-width: 100%;
+        margin-left: 5px;
+
+        .top{
+            font-size: .7em;
+        }
+
+        .bottom{
+            max-width: 90%;
+        } 
+        
+        .link-txt{
+            font-size: .7em;
+        }
+    }
+
+    .content{
+        flex-direction: column;
+    }
     .footer .content {
         width: 100%;
     }

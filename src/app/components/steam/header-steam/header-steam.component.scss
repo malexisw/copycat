@@ -2,7 +2,6 @@
     background: #171a21;
 
     .content{
-        width: 940px;
         margin: auto;
 
         display: flex;
@@ -12,13 +11,17 @@
         width: 176px;
         height: 44px;
 
-        padding: 25px 25px 25px 0px;
+        
 
         .img-logo{
             width: 100%;
 
             cursor: pointer;
         }
+    }
+
+    .flex{
+        display: flex;
     }
 
     .nav{
@@ -28,6 +31,8 @@
         color: #b8b6b4;
 
         margin: 35px 7px 7px 7px;
+
+        
         
         .txt{
             text-transform: uppercase;
@@ -124,5 +129,25 @@
         .h:hover{
             color: #fff;
         }
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .content{
+        max-width: 940px;
+    }
+    .logo{
+        padding: 25px 25px 25px 0px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .content{
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .logo{
+        padding: 10px 0;
     }
 }
